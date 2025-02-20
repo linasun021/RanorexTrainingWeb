@@ -1,0 +1,21 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <string>{C2DEE3DC-361E-4A95-B091-58720AEC7C7E}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>9fe862c0-3439-486c-88b0-0f12b769c72b</string>
+      <string>c55edb3c-d057-4e55-9663-893b426efde7</string>
+      <string>41c746c9-3c9a-4761-92bf-c79da8cbfc64</string>
+      <string>fd254637-6941-48f6-b9f1-61c0c1182a2e</string>
+      <string>63b59aee-9bc7-44be-8e17-9cba7271f118</string>
+      <string>8561abf8-6612-4f55-830e-9c38ca9a2f02</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution CrossBrowserTest[Solution Items[]CrossBrowserTest[Reports[]RecordingModules[CartPage[]CheckOutPage[]HookPage[]Menu[]ShopPage[AddProductToCart.rxrec[]]]]]]&#xD;&#xA;Solution CrossBrowserTest\CrossBrowserTest\CrossBrowserTest.rxtst&#xD;&#xA;Solution CrossBrowserTest" />
+  <StartupProject value="{C2DEE3DC-361E-4A95-B091-58720AEC7C7E}" />
+</Properties>

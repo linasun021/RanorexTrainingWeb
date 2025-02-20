@@ -1,0 +1,175 @@
+﻿<repository
+id="899a6a28-2647-404d-93f9-145965b36be6"
+name="RXTrainingWebAppRepository">
+	<codegen
+	classname="RXTrainingWebAppRepository"
+	namespace="CrossBrowserTest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="6745b119-3268-41d8-9bfe-5037074397e8"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="2bd0f3e6-4055-480e-9397-431b4558843c"
+		isrooted="True"
+		name="JupiterPrimeGoogleChrome"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			capname="unknown"
+			id="0591abfe-e005-4701-849e-d1e5a3528b39"
+			isrooted="False"
+			name="Menu"
+			searchtimeout="0ms">
+				<item
+				addcaps="link,uiautomation,uiautomationinvoke,uiautomationscrollitem,uiautomationvalue"
+				capname="link"
+				id="8f662f39-4cd7-4ea4-950c-e362b3bf0d63"
+				name="MenuShop"
+				refimgid="6d7c7c17-f9e8-4af3-96bb-bef6e7598310"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title&gt;'JupiterPrime']/?/container[@automationid='root']//link[@automationid='menu-shop']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="e0893e39-57c2-4e59-851b-3147275b7622"
+			isrooted="False"
+			name="CartPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="text,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+				capname="text"
+				id="8647a075-016e-42ee-b18b-20b9e81f7bcb"
+				name="ProductName"
+				refimgid="97141496-eee9-4561-93ca-073d4e901d9c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title&gt;'JupiterPrime']/?/?/?/?/table[@automationid='cart-items']//text[@name=$varProudctNameInCart]
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+				capname="button"
+				id="87942045-1102-484b-b598-818bc0ab464c"
+				name="ModalYesButton"
+				refimgid="1d189cfc-ed68-497b-b5b6-7fe05b544d7c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title&gt;'JupiterPrime']/?//element[@automationid='empty-cart-modal']/button[@automationid='modal-yes-button']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+				capname="button"
+				id="616a6120-4897-4534-9bde-9cdd1485a313"
+				name="CheckoutButton"
+				refimgid="d673fbb6-7244-4516-a2de-7243386599c6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title&gt;'JupiterPrime']/?//button[@automationid='checkout-button']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+				capname="button"
+				id="c91b988d-f279-4e0e-916c-9c7c3a9a9774"
+				name="EmptyCartButton"
+				refimgid="3d212876-6e5e-4513-917e-7719262461e7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title&gt;'JupiterPrime']/?//button[@automationid='empty-cart-button']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="2b030481-958e-4240-aa15-411a1a18f682"
+			isrooted="False"
+			name="CheckoutPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="text,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+				capname="text"
+				id="b5b78802-d67f-4d4b-9b37-dbcb99cf4749"
+				name="TxtTotalPrice"
+				refimgid="dab34403-573f-4464-a5b1-ffd09053964b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title&gt;'JupiterPrime']/?//?/?//?/?/?/?/table[@automationid='cart-items']//?/container[@automationid='footer-total']/?/?/text
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="d0100016-3a7a-481d-9177-1552b94cd2dc"
+			isrooted="False"
+			name="ShopPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+				capname="button"
+				id="358ff01a-3a86-463f-a0fb-684833b38d13"
+				name="AddOnepProductToCart"
+				refimgid="82f69e7a-dc95-46e9-9e63-ad4933942fa2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title&gt;'JupiterPrime']/*/descendant-or-self::*/*/button[@name=$varAddProductButtonName]
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+				capname="button"
+				id="d43dd59a-efc6-42db-9abc-66fc9c66da50"
+				name="MyCartButton"
+				refimgid="2b9b0370-9df6-42a1-b715-e6e63ee306fa"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title&gt;'JupiterPrime']/?/?/?/container[@automationid='app-root']/container[3]/button[@automationid='my-cart-button']
+				</item>
+			</folder>
+			<basepath>
+				/form[@title&gt;'JupiterPrime']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJjSURBVDhPfZFLTBNRGIVnVxcmRRdqItCXZfpi
+aDvUBwWhLSBWtBoXLmVt3GhIVChC4oJEjaICSm2rSNz52Lkxxmh4KejGhYkxFsFWjNIWNZGU4R7v
+HaZTtNGTfPnvnTnn3JsZ7l86snlj21RNZeKL34MHroqnOo1Gr7z6v97VOjPzPhHzvmqKiFS9i8w3
+iPis0F6+pVuxFqtgdtOgG8ndTrI6XUhR6H6VOieUSEHMQAtk46faKjJHYeY5r0Donj1Toe/wZrs1
+rUQ57vyJBrLWyAyzNZVk6fUUmFZmLkJ6IVKqV5mk60k3tFquRC5w3T2IWa9AQwI+7nKQbHRQDnq6
+s/D0ZBHq+yHvc+MCWZ6ogqQigFsvbgo5R0Lwxg5gZqcDiR02wszi2QxEWiBPipsil4zZiDRhhzTO
+sIGzXggkhOH9YHzwWMmvVy/h7Mr8RVqeqcwKDVkoPKQxHrlRM+Hs8SBx3GqFI74PtlhQPl0Ip1Uq
+Fdj6XOgxevgIme49BGnUiNxzA+G2HnM9tMeCYFhvtpDpexG0RRdh71xQOdw6gU7dnSJyz3T0d9Iv
+yQ81E35oD7FEWsDW7BaWjm+wyiyogZMbougoH/6jRP4L5utNhL/RjIo1ML1NSuhpeqSav77PImwo
+hNWCkqCx2zQQIObBRpgHm1S2DTTitDFO8uaFme/oMo4UFzAZrvqIqd8P0zU/jBRTf0Cee48eV83Z
+5E/cbx/DmdLbxQVMZb3eDC2Cvq+eGK74oKOTkTez64cNI+p3OFUWW1KiBWm0Gr3ucj0YZZfqCJvL
+T9apJ+ZpLx1a5DiO+w2r1QI9WCKV4wAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="d91b8e00-09c6-4379-98ba-277e8a4ba478"
+		name="varProductName">
+			puppy
+		</var>
+		<var
+		id="4dba7918-bc36-40cc-a7c8-f858e4c60eeb"
+		name="varProudctNameInCart">
+			puppy
+		</var>
+		<var
+		id="d1fd77c8-62f5-46b4-a4f5-684266013fdc"
+		name="varAddButtonName">
+			Add one puppy to cart
+		</var>
+		<var
+		id="3ada7aeb-4004-451f-8388-78a644226834"
+		name="varAddProductButtonName">
+			Add one puppy to cart
+		</var>
+	</variables>
+</repository>

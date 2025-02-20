@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/CrossBrowserTest/obj/x86/Debug
+*.lnk
+/CrossBrowserTest/bin/Debug/SingleReportPDF/CrossBrowserTest
+/CrossBrowserTest/bin/Debug/SingleReportPDF/RXTrainingWebAppTest
+/CrossBrowserTest/bin/Debug

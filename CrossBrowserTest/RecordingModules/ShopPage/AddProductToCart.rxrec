@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b3ca57b5-f566-4bb4-87a4-8a98f557adfe"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AddProductToCart"
+	namespace="CrossBrowserTest.RecordingModules.ShopPage">
+	</codegen>
+	<variables>
+		<var
+		id="48ee1f95-cc92-4ae7-8a1d-250fd99215dc"
+		name="varProductName">
+			puppy
+		</var>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="Focus"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a1bb3b8f-cf51-4b18-bc67-432948064006">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="358ff01a-3a86-463f-a0fb-684833b38d13"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'JupiterPrime']/text//container[@name='puppy']/button[@name='Add one puppy to cart']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="b713982b-f207-4630-9ac7-1884e7f94088">
+			</arguments>
+		</invokeactionrecorditem>
+		<invokeactionrecorditem
+		action="Press"
+		enabled="True"
+		optional="False"
+		searchpropertyid="504dbb9e-01e8-4ae2-824a-ec953f305635">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="358ff01a-3a86-463f-a0fb-684833b38d13"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'JupiterPrime']/text//container[@name='puppy']/button[@name='Add one puppy to cart']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="cb86edcc-4962-4b3b-bbbe-bda369ef8d71">
+			</arguments>
+		</invokeactionrecorditem>
+	</recorditems>
+	<repository
+	id="899a6a28-2647-404d-93f9-145965b36be6"
+	name="RXTrainingWebAppRepository"
+	relativepath="..\..\RXTrainingWebAppRepository.rxrep">
+		<codegen
+		classname="RXTrainingWebAppRepository"
+		namespace="CrossBrowserTest">
+		</codegen>
+		<rootfolder
+		id="6745b119-3268-41d8-9bfe-5037074397e8"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AddProductToCart.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

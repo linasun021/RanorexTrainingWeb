@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="13548bcc-677a-4c7e-bd7d-35e2541a523d"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateTotalPrice"
+	namespace="CrossBrowserTest.RecordingModules.CheckOutPage">
+	</codegen>
+	<variables>
+		<var
+		id="b79fb5b5-b092-4227-9029-ecf85256f809"
+		name="varActualTotalPrice">
+			$2,198.00
+		</var>
+		<var
+		id="935ee680-21ff-41ed-8040-ead5f8e09929"
+		name="varExpectTotalPrice">
+			$2,198.00
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="04898cc3-37f0-403a-9e2a-4e9e20b38f4f"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b5b78802-d67f-4d4b-9b37-dbcb99cf4749"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'JupiterPrime']/?/container[@automationid='root']/?/?/table[@automationid='cart-items']//container[@automationid='footer-total']/?/?/text[@name='$1,099.00']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Name
+			</matchname>
+			<matchvalue>
+				$1,099.00
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5a788498-4f56-4211-94cb-3397045065c2"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="varExpectTotalPrice">
+				</binding>
+			</bindings>
+			<info
+			id="b5b78802-d67f-4d4b-9b37-dbcb99cf4749"
+			sourcename="ElementTree">
+				<element
+				capabilities="uiautomation, uiautomationscrollitem"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="2685,404,83,24"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="backgroundcolor"
+					type="System.String">
+						$2,198.00
+					</attribute>
+					<attribute
+					name="caption"
+					type="System.String">
+						$2,198.00
+					</attribute>
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						$2,198.00
+					</attribute>
+					<attribute
+					name="textcolor"
+					type="System.String">
+						$2,198.00
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Text
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						$2,198.00
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAComWrapper, Version=1.1.0.15, Culture=neutral, PublicKeyToken=78cbcf77433a85e5">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						28064
+					</attribute>
+				</element>
+				<path>
+					/form[@title&gt;'JupiterPrime']/container[@name&gt;'JupiterPrime - Microsoft Edge']//?/?//?/?/?/?/table[@automationid='cart-items']//?/container[@automationid='footer-total']/?/?/text[@name='$2,198.00']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="305b5951-5897-4169-a6f2-f6eba46f7784">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAC6AfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDo6KKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooABXP10Arn6ANy3/49ov8AcH8qKLf/AI9ov9wfyooAkooooAKKKKACiiigAooqjq08kFqCjMis
+SGkUZKDBx9OcDPvQBeoqtGJvsa+VMsrtgh5Bxg/TGePpRp0sk1lHJKwZznJAx3NAFmisyS4uDbzX
+qykJE5Ai2jDKpwcnGc8Hv6Uk1zN5d1cLcCMW7YEWBggYPORnn29qANSis+SaWaWfZc+QsKBgMA5y
+M5bI6fTHepGvD/Za3SqN7opUHplsAfqaALlFZ01xLYOfNladTCzjcoBDLjjgDg5p6NcQXFus0xlE
++QwKgBWxnjA6cHrmgC9RRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFZ2qzyRGJBK0Eb
+HmRR3yOMngcZP4VaeKQxqv2p02j5nVVy35gj9KAJ6KrafK81oryHcckBsY3AHAP4imRS3P8AaRim
+ZNhjLKqDp82BknrxQBcorL+1yiBLtrjhpthhwMAbtuOmcjr1ouLqZJ5QJtkiuoit9o/eLxz0ye/T
+pigDUoqteyvGkaREK8rhAxGdvqfyBqtLcz2rzQGTzXwhidwM/MdvOMDg80AaVFU4Wlhvfs8kzTK8
+ZdWYAEEEAjgD1FXKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAAVz9dAK5+gD
+ct/+PaL/AHB/Kii3/wCPaL/cH8qKAJKKKKACiiigAooooAKr33nG2cQIrkqQQxI4x2wDzViigCrp
+9ubaAhgql2L7F6LnsKbBHNa2sEICsxchiMkAZJJq5RQBntZzeXJbAx/Z5HLFsncATkjGMevOe9Ld
+Wb3MrBobdVI2+d1kC9wOOO461fooAp3VvJM4Cw2xAGFlflo/oMf1FElo725tVZFhWNRGeSwYHv7c
+CrlFAFF7SW7LG7EafumjURsW+91PIHoOKdHBO80T3PlgQg7dhJ3EjGTkccZ4561cooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigCpqKzvBtiijkUkblYkdx7HNQGynWCCBRFLEmS8bOUBO
+cgdDkD0+laVFAFdXuPMiR4kQHJbaxYADpzgc8/pR5LfbxPkbfK2Y75zmrFFAFBrNprnfJDbxjcGa
+ROXfByAeBjoO56U2azuGjuIE8kxzsWMjE7lz7Y5x25HatGigCpPBPKPvR5ikV4Tzzgchvrz0qOSy
+lnEskpRJm27NpLBdpyOeM81fooArQwytc/aLgIrBNiqjFgBnJOSB7du1WaKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKAAVz9dAK5+gDct/+PaL/AHB/Kii3/wCPaL/cH8qKAJKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+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
+ooAkooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDMn/5GC2/65n/ANmrTqjeae1z
+crOlwYmVdowOe/fPvUX9mXP/AEEpv1/xqFdX0M1dN6GnRWZ/Zlz/ANBKb9f8aP7Muf8AoJTfr/jT
+u+w+aXY06KzP7Muf+glN+v8AjR/Zlz/0Epv1/wAaLvsHNLsadFZn9mXP/QSm/X/Gj+zLn/oJTfr/
+AI0XfYOaXY06KzP7Muf+glN+v+NH9mXP/QSm/X/Gi77BzS7GnRWZ/Zlz/wBBKb9f8aP7Muf+glN+
+v+NF32Dml2NOisz+zLn/AKCU36/40f2Zc/8AQSm/X/Gi77BzS7GnRWZ/Zlz/ANBKb9f8aP7Muf8A
+oJTfr/jRd9g5pdjTorM/sy5/6CU36/40f2Zc/wDQSm/X/Gi77BzS7GnRWZ/Zlz/0Epv1/wAaP7Mu
+f+glN+v+NF32Dml2NOisz+zLn/oJTfr/AI0f2Zc/9BKb9f8AGi77BzS7GnRWZ/Zlz/0Epv1/xo/s
+y5/6CU36/wCNF32Dml2NOoL3/jyn/wCubfyqn/Zlz/0Epv1/xpG0u4ZSrajKQRggg8/rSbfYG5di
+fSP+QZD/AMC/9CNXags7f7LbJDu3bc84x3zU9UtEVFWSQUUUUxhRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFAAK5+ugFc/QBuW//HtF/uD+VFFv/wAe0X+4P5UUASUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQACufroBXP0Ablv/AMe0X+4P
+5UUW/wDx7Rf7g/lRQBJRSUUALRSUUALRSUUALRSUUALRSUUALRSUUALRSUUALRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAArn66AVz9AG5b/wDHtF/uD+VFFv8A8e0X+4P5UUAO8pP7
+v60eUn939afRQAzyk/u/rR5Sf3f1p9FADPKT+7+tHlJ/d/Wn0UAM8pP7v60eUn939afRQAzyk/u/
+rR5Sf3f1p9FADPKT+7+tHlJ/d/Wn0UAM8pP7v60eUn939afRQBHjY4A6HtT6ZJ99Pxp1AEdzMLe3
+eVhkKOnrWC+rXjMSJAo9Ao/rWtq//IOl/D+Yrm6xqSadkdNGKauy5/at7/z2/wDHV/wo/tW9/wCe
+3/jq/wCFU6Ky5n3NeSPYuf2re/8APb/x1f8ACj+1b3/nt/46v+FU6KOZ9w5I9i5/at7/AM9v/HV/
+wqa11edZR57B0JweACPyrNop8z7g4RfQ7ClpB0pa6jhCiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooABXP10Arn6ANy3/AOPa
+L/cH8qKLf/j2i/3B/KigCWiiigAooooAKKKKACiiigAooooAKKKKACiiigCOT76fjTqbJ99Pxp1A
+FPV/+QdL+H8xXOAEkADJPSuj1f8A5B0v4fzFYdgM30Gf74rCavJI6qTtBsvXVtD9kkhjRfOt1VmY
+Dls9arrYReXA0lzsMw+UbM/1reY53g8jB4rIkHyaX9f6inKKuTCbehANPCpK084jET7D8uc1Nb23
+2d5tr+Yj2zMrYxkfSpbzm0vs/wDPYf0p5+6B2+wmpSX9ehXM2Uf7P/fqvm/ujF5vmbe30qjWyp/4
+p/PfaRn23VjVMkky4Nu9zsB0paQdKWuo4gooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAAVz9dAK5+gDct/8Aj2i/3B/Kii3/
+AOPaL/cH8qKAP//Z
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				$2,198.00
+			</matchvalue>
+		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c5cdb566-cfdb-433a-819e-5ebb84a40896"
+		varname="varActualTotalPrice">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b5b78802-d67f-4d4b-9b37-dbcb99cf4749"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'JupiterPrime']/container[@name&gt;'JupiterPrime - Microsoft Edge']//container[@classname='BrowserView']/container[@classname='SidebarContentsSplitView']//container[@automationid='30201664']/text[@automationid='RootWebArea']/container[@automationid='root']/container[@automationid='app-root']/table[@automationid='cart-items']//element[@classname='px-2 py-1 md:px-6 md:py-3 text-lg lg:text-xl']/container[@automationid='footer-total']/*[1]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="4456018c-7a7a-4ee2-a87b-1df1d1f5a65f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="varActualTotalPrice">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="899a6a28-2647-404d-93f9-145965b36be6"
+	name="RXTrainingWebAppRepository"
+	relativepath="..\..\RXTrainingWebAppRepository.rxrep">
+		<codegen
+		classname="RXTrainingWebAppRepository"
+		namespace="CrossBrowserTest">
+		</codegen>
+		<rootfolder
+		id="6745b119-3268-41d8-9bfe-5037074397e8"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateTotalPrice.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

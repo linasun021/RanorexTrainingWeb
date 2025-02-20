@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{C2DEE3DC-361E-4A95-B091-58720AEC7C7E}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CrossBrowserTest</RootNamespace>
+    <AssemblyName>RXTrainingWebApp</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>19f142ee-b095-409f-a31b-172387862810</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>2e11922d-4af5-4f73-9f8a-5cca8645a055</id>
+    </Compile>
+    <Compile Include="RXTrainingWebAppRepository.cs">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <DependentUpon>RXTrainingWebAppRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>e87c03fb-c300-4534-92f2-cedf6f7d6320</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>df45d284-691b-4398-95e2-9287eb0ea795</id>
+    </Compile>
+    <Compile Include="RecordingModules\CartPage\ClickCheckOutButton.cs">
+      <DependentUpon>ClickCheckOutButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>731802ff-a834-4b20-8aec-358416caeb10</id>
+      <BoundTo>84d1c3d0-2ecb-4e8f-82cd-266cdf2c2e7f</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\CartPage\ClickCheckOutButton.UserCode.cs">
+      <DependentUpon>ClickCheckOutButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7f816bd4-700d-445e-9da6-3b8140375408</id>
+      <BoundTo>84d1c3d0-2ecb-4e8f-82cd-266cdf2c2e7f</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\CartPage\EmptyCart.cs">
+      <DependentUpon>EmptyCart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a7534fb7-50d8-451e-a2dc-050167fdff4e</id>
+      <BoundTo>9f0d2b7f-e42a-46e1-b4fa-debaa74707c3</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\CartPage\EmptyCart.UserCode.cs">
+      <DependentUpon>EmptyCart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aef96c58-21e2-47ba-a8e9-d1285a211bb6</id>
+      <BoundTo>9f0d2b7f-e42a-46e1-b4fa-debaa74707c3</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\CartPage\ValidateProductInCart.cs">
+      <DependentUpon>ValidateProductInCart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>590aa6da-39b1-4421-8cfb-bb3f64a1eeea</id>
+      <BoundTo>871b36da-fa55-435b-9622-917e154c81ba</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\CartPage\ValidateProductInCart.UserCode.cs">
+      <DependentUpon>ValidateProductInCart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0334898c-9973-4c8c-84a8-a6dbb9af56f0</id>
+      <BoundTo>871b36da-fa55-435b-9622-917e154c81ba</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\CheckOutPage\ValidateTotalPrice.cs">
+      <DependentUpon>ValidateTotalPrice.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>635adf7c-0808-41e7-8eed-64a444ae0a92</id>
+      <BoundTo>c7669c21-f84d-410d-bc03-1af5f1c865bb</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\CheckOutPage\ValidateTotalPrice.UserCode.cs">
+      <DependentUpon>ValidateTotalPrice.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9f1eb1e3-b33e-47f7-9675-da11e91749cf</id>
+      <BoundTo>c7669c21-f84d-410d-bc03-1af5f1c865bb</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\HookPage\CloseBrowser.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>546e9faf-aeb7-4c5d-9045-64b95129a588</id>
+      <BoundTo>f8a3dc13-ce27-4374-b37d-092784de0d6b</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\HookPage\CloseBrowser.UserCode.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a8938ac6-6a6a-4fd7-a523-a26fd943a4ca</id>
+      <BoundTo>f8a3dc13-ce27-4374-b37d-092784de0d6b</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\HookPage\OpenBrowser.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e98b5f1e-c8ec-4dfa-bea3-9c0444e778bb</id>
+      <BoundTo>2d8aee2a-1db7-462c-96c1-f4a7cba5c62d</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\HookPage\OpenBrowser.UserCode.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a07d7f53-f904-4667-a666-fc99078e789e</id>
+      <BoundTo>2d8aee2a-1db7-462c-96c1-f4a7cba5c62d</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\Menu\ClickShopButton.cs">
+      <DependentUpon>ClickShopButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0f03343a-ee50-40cf-9b09-63becdc6ded8</id>
+      <BoundTo>e828578c-0b84-405c-98e5-d4c4ae188618</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\Menu\ClickShopButton.UserCode.cs">
+      <DependentUpon>ClickShopButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9944edc2-2695-4c8f-a05d-7adec7790f19</id>
+      <BoundTo>e828578c-0b84-405c-98e5-d4c4ae188618</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\ShopPage\AddProductToCart.cs">
+      <DependentUpon>AddProductToCart.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0c238da-f348-4b54-9e32-f09a68cfd6d5</id>
+      <BoundTo>50d25f59-2645-4400-85d1-ac73adea106a</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\ShopPage\AddProductToCart.UserCode.cs">
+      <DependentUpon>AddProductToCart.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e49cd09b-33af-41b0-8e30-572f6c6e9ade</id>
+      <BoundTo>50d25f59-2645-4400-85d1-ac73adea106a</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\ShopPage\ClickMyCartButton.cs">
+      <DependentUpon>ClickMyCartButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0faf2010-65f6-4913-bc37-570bfd76c8f6</id>
+      <BoundTo>0b50313e-5999-490d-8a90-0b72594e1b0f</BoundTo>
+    </Compile>
+    <Compile Include="RecordingModules\ShopPage\ClickMyCartButton.UserCode.cs">
+      <DependentUpon>ClickMyCartButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>09c30f61-e0f0-4d0e-b813-66043930dd66</id>
+      <BoundTo>0b50313e-5999-490d-8a90-0b72594e1b0f</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>2d501924-df73-4b58-89da-f5f87b6bcfc9</id>
+    </None>
+    <None Include="RXTrainingWebAppRepository.rximg">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <DependentUpon>RXTrainingWebAppRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>7c10543b-edd3-4c58-8929-803f40608433</id>
+    </None>
+    <None Include="RXTrainingWebAppRepository.rxrep">
+      <id>19f142ee-b095-409f-a31b-172387862810</id>
+      <repoid>899a6a28-2647-404d-93f9-145965b36be6</repoid>
+      <reporootid>6745b119-3268-41d8-9bfe-5037074397e8</reporootid>
+    </None>
+    <None Include="RecordingModules\CartPage\ClickCheckOutButton.rxrec">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <id>84d1c3d0-2ecb-4e8f-82cd-266cdf2c2e7f</id>
+      <recordtableid>3400ec72-4cd6-4886-8b29-94d1ae9bbe1f</recordtableid>
+    </None>
+    <None Include="RecordingModules\CartPage\EmptyCart.rxrec">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <id>9f0d2b7f-e42a-46e1-b4fa-debaa74707c3</id>
+      <recordtableid>b9b044a6-8306-4f96-864d-f7a46404348b</recordtableid>
+    </None>
+    <None Include="RecordingModules\CartPage\ValidateProductInCart.rxrec">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <id>871b36da-fa55-435b-9622-917e154c81ba</id>
+      <recordtableid>560dca42-667f-4e04-92c6-7b3072e54310</recordtableid>
+    </None>
+    <None Include="RecordingModules\CheckOutPage\ValidateTotalPrice.rxrec">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <id>c7669c21-f84d-410d-bc03-1af5f1c865bb</id>
+      <recordtableid>13548bcc-677a-4c7e-bd7d-35e2541a523d</recordtableid>
+    </None>
+    <None Include="RecordingModules\HookPage\CloseBrowser.rxrec">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <id>f8a3dc13-ce27-4374-b37d-092784de0d6b</id>
+      <recordtableid>5931ed7d-0db2-4e5a-a5fa-b12a4770b7dd</recordtableid>
+    </None>
+    <None Include="RecordingModules\HookPage\OpenBrowser.rxrec">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <id>2d8aee2a-1db7-462c-96c1-f4a7cba5c62d</id>
+      <recordtableid>7f74beba-8498-4369-b445-b6adf2acbb62</recordtableid>
+    </None>
+    <None Include="RecordingModules\Menu\ClickShopButton.rxrec">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <id>e828578c-0b84-405c-98e5-d4c4ae188618</id>
+      <recordtableid>a9c3430e-6a35-4d26-84f0-19a9da43973d</recordtableid>
+    </None>
+    <None Include="RecordingModules\ShopPage\AddProductToCart.rxrec">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <id>50d25f59-2645-4400-85d1-ac73adea106a</id>
+      <recordtableid>b3ca57b5-f566-4bb4-87a4-8a98f557adfe</recordtableid>
+    </None>
+    <None Include="RecordingModules\ShopPage\ClickMyCartButton.rxrec">
+      <BoundTo>19f142ee-b095-409f-a31b-172387862810</BoundTo>
+      <id>0b50313e-5999-490d-8a90-0b72594e1b0f</id>
+      <recordtableid>af014db2-83fd-4fe0-919d-d7b7b2198f55</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RXTrainingWebApp.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>0b5f5fdc-721c-4763-bcf6-38bb1a7acd37</id>
+    </Content>
+    <Content Include="RXTrainingWebAppTest.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>da4ae993-23e4-44ed-bdc7-3c3ee7faa7fb</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RecordingModules">
+      <id>9fe862c0-3439-486c-88b0-0f12b769c72b</id>
+    </Folder>
+    <Folder Include="RecordingModules\CartPage">
+      <id>c55edb3c-d057-4e55-9663-893b426efde7</id>
+    </Folder>
+    <Folder Include="RecordingModules\CheckOutPage">
+      <id>41c746c9-3c9a-4761-92bf-c79da8cbfc64</id>
+    </Folder>
+    <Folder Include="RecordingModules\Menu">
+      <id>63b59aee-9bc7-44be-8e17-9cba7271f118</id>
+    </Folder>
+    <Folder Include="RecordingModules\HookPage">
+      <id>fd254637-6941-48f6-b9f1-61c0c1182a2e</id>
+    </Folder>
+    <Folder Include="RecordingModules\ShopPage">
+      <id>8561abf8-6612-4f55-830e-9c38ca9a2f02</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

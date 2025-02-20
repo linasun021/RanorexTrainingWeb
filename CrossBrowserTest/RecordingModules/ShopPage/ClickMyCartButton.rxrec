@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="af014db2-83fd-4fe0-919d-d7b7b2198f55"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickMyCartButton"
+	namespace="CrossBrowserTest.RecordingModules.ShopPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="Focus"
+		enabled="True"
+		optional="False"
+		searchpropertyid="66f7fee8-cff3-4aeb-a35f-5ce6643808f2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d43dd59a-efc6-42db-9abc-66fc9c66da50"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@title&gt;'JupiterPrime']/text[@automationid='80878432']/?/?/container[@automationid='app-root']/container[3]/button[@automationid='my-cart-button']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="a2f5c540-4066-4f49-8ae7-e087c2f8cf7a">
+			</arguments>
+		</invokeactionrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="57;14"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0c5fc20b-88ce-4cb1-97b6-97e48c495b76"
+		sx="3039"
+		sy="266"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d43dd59a-efc6-42db-9abc-66fc9c66da50"
+			sourcename="Recorder">
+				<element
+				capabilities="uiautomation, uiautomationinvoke, uiautomationscrollitem"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="True"
+				index="1"
+				prefcap="button"
+				rect="2982,252,100,50"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						My Cart→
+					</attribute>
+					<attribute
+					name="automationid"
+					type="System.String">
+						my-cart-button
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Button
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						My Cart→
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						15792
+					</attribute>
+				</element>
+				<path>
+					/form[@title&gt;'JupiterPrime - Google Chr']/text[@automationid='80878432']/?/?/container[@automationid='app-root']/container[3]/button[@automationid='my-cart-button']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="5bb5cecb-fef7-406a-8904-c0971153179a">
+				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
+6bufbk1WYgsSAACeg7UlFTcuxYuf+QNH/wBdv6Gt+sC5/wCQNH/12/oa361gRV+CPq/0CiiitDmC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACszXv+PJP+ug/ka06p6nayXluscZUEOG+Y+x/xqZK6NaElGomzKu4Whnb
+cDgnIPrUNaRt9VPW5hP4f/Y0n2XU/wDn4h/L/wCxrJxOhWt8S/r5GdRWj9l1P/n4h/L/AOxo+y6n
+/wA/EP5f/Y0coafzL7/+AZ1FaP2XU/8An4h/L/7Gj7Lqf/PxD+X/ANjRyhp/Mvv/AOAZ1FaP2XU/
++fiH8v8A7Gj7Lqf/AD8Q/l/9jRyhp/Mvv/4BnUVo/ZdT/wCfiH8v/saPsup/8/EP5f8A2NHKGn8y
++/8A4BnUAFjgAknsK0fsup/8/EP5f/Y0ottUHS4hH4f/AGNHKGn8y+//AIBBfxNDpESt97zMn8jW
+5WPPYajcRhJp4WUHOOnP5VsVpHcyq25Yq99woooqznCiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBKKWigBKK
+WigBKKWigBKKWigBKKWigBKKWigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KAP/2Q==
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="899a6a28-2647-404d-93f9-145965b36be6"
+	name="RXTrainingWebAppRepository"
+	relativepath="..\..\RXTrainingWebAppRepository.rxrep">
+		<codegen
+		classname="RXTrainingWebAppRepository"
+		namespace="CrossBrowserTest">
+		</codegen>
+		<rootfolder
+		id="6745b119-3268-41d8-9bfe-5037074397e8"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickMyCartButton.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

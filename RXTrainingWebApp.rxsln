@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+# Ranorex Studio 12.0.0
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0C13CC9-42F1-4B42-B24C-1BA3B78DEC09}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RXTrainingWebApp", "CrossBrowserTest\RXTrainingWebApp.csproj", "{C2DEE3DC-361E-4A95-B091-58720AEC7C7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2DEE3DC-361E-4A95-B091-58720AEC7C7E}.Debug|x86.Build.0 = Debug|x86
+		{C2DEE3DC-361E-4A95-B091-58720AEC7C7E}.Debug|x86.ActiveCfg = Debug|x86
+		{C2DEE3DC-361E-4A95-B091-58720AEC7C7E}.Release|x86.Build.0 = Release|x86
+		{C2DEE3DC-361E-4A95-B091-58720AEC7C7E}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

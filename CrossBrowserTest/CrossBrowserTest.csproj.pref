@@ -1,0 +1,28 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="CrossBrowserTest.rxtst" />
+  </Array>
+  <Array name="bookmarks">
+    <Element value="Breakpoint|C:\Users\l.sun\source\repos\CrossBrowserTest\CrossBrowserTest\RecordingModules\ShopPage\AddProductToCart.UserCode.cs|33|13|True|Break||" />
+    <Element value="Breakpoint|C:\Users\l.sun\source\repos\CrossBrowserTest\CrossBrowserTest\RecordingModules\ShopPage\AddProductToCart.cs|101|13|True|Break||" />
+  </Array>
+  <Array name="files">
+    <Element value="CrossBrowserTest.rxtst" />
+    <Element value="RecordingModules\HookPage\OpenBrowser.rxrec" />
+    <Element value="RecordingModules\ShopPage\GenerateAddProductButtonName.cs" />
+    <Element value="RecordingModules\ShopPage\AddProductToCart.rxrec" />
+    <Element value="RecordingModules\ShopPage\AddProductToCart.cs" />
+    <Element value="RecordingModules\ShopPage\AddProductToCart.UserCode.cs" />
+    <Element value="RecordingModules\CheckOutPage\ValidateTotalPrice.UserCode.cs" />
+    <Element value="RecordingModules\CheckOutPage\ValidateTotalPrice.cs" />
+    <Element value="RecordingModules\ShopPage\ClickMyCartButton.rxrec" />
+    <Element value="RecordingModules\CheckOutPage\ValidateTotalPrice.rxrec" />
+    <Element value="RecordingModules\CartPage\ValidateProductInCart.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>
